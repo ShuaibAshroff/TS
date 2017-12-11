@@ -1,0 +1,110 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Trip Sorter</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../public/stylesheets/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="../public/stylesheets/jumbotron.css" rel="stylesheet" />
+    <link href="../public/stylesheets/TripSorter.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+
+                <h1 class="display-3">Trip Sorter</h1>
+                <p>
+                    <select id="ddlFrom" class="ddlFrom select">
+                        <option value="0">Trip From (Depart From)</option>
+                    </select>
+
+                    <select id="ddlTo" class="ddlTo select">
+                        <option value="0">Trip To (Arrive At)</option>
+                    </select>
+                </p>
+                <p>
+                    <div class="col-md-3" style="height:30px; border-radius: 25px; border:1px solid black;">
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="COST" class="rdSortBy"><b> Cheapest</b>
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="FAST" class="rdSortBy"><b> Fastest </b>
+                        </label>
+                    </div>
+                </p>
+
+                <p><a class="btn btn-primary btn-lg" href="#" role="button">Search &raquo;</a></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="dvTripWrapper container">
+            </div>
+            <br />
+            
+        </div> <!-- /container -->
+
+        <div class="container">
+            <div class="col-md-7 wrapper">
+                <div style="width:70%; text-align:right; font-weight:bold; font-size:40px">Total : <span id="spnHr">0</span>h <span id="spnM">0</span>m  <span id="spnTot">0</span>€</div>
+            </div>
+            <br />
+            <p><a class="btn btn-success btn-lg" href="#" role="button">Reset &raquo;</a></p>
+        </div>     
+    </main>
+
+    <div id="dvDisPic" class="pic">
+        <img  src="../public/images/booktrip.png"/>
+    </div>
+
+    <footer class="container">
+        <p>&copy; M.Shuaib 2017, All right reserved</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../public/javascripts/react.js"></script>
+    <script src="../public/javascripts/react-dom.js"></script>
+    <script src="../public/javascripts/browser.js"></script>
+    <script src="../public/javascripts/jquery-3.2.1.js"></script>
+    <script src="../public/javascripts/bootstrap.min.js"></script>
+    <script src="../public/javascripts/TripSorter.js"></script>
+    <script src="../models/response.js"></script>
+</body>
+</html>

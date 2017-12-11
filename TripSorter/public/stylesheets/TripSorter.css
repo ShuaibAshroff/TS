@@ -1,0 +1,32 @@
+﻿
+.select{
+   font-size: 1.0rem;
+}   
+
+.wrapper{
+    border:1px solid black;
+    height:100px;
+    border-radius: 25px;
+}
+
+
+.wrapperTot{
+    border:1px solid black;
+    height:100px;
+    border-radius: 25px;
+}
+
+
+.pic{
+    display:none;
+    width:200px;
+    height:200px;
+    border:1px solid blue;
+}
+
+total-wrapper{
+    width:70%; 
+    text-align:right; 
+    font-weight:bold; 
+    font-size:40px
+}
